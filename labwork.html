@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Table with CSS</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        height: 30px;
+    }
+
+    #main {
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        white-space: nowrap;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<div id="main">
+    <table>
+        <tbody>
+            <!-- Row 1 -->
+            <tr>
+                <!-- Columns -->
+                <th colspan="2">Time</th>
+                <th>7:<sup>30</sup> - 8:<sup>00</sup></th>
+                <th>8:<sup>00</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+            </tr>
+
+            <!-- row 2 -->
+            <tr>
+                <th colspan="2">Duration</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+            </tr>
+
+            <!-- row3 -->
+            <tr>
+                <th colspan="2">Period</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>0</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+
+            <!-- Monday  -->
+            <!-- row 4 -->
+            <tr>
+                <td rowspan="3">Mon</td>
+                <td>4</td>
+                <td rowspan="15" class="vertical-text">Assembly & Registration in Class</td>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2">AKuapen Twi</td>
+                <td rowspan="15" class="vertical-text">Break</td>
+                <td rowspan="3">Library</td>
+                <td colspan="2">Science</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td colspan="2">History</td>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2">Science</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td colspan="2">Mathematics</td>
+                <td colspan="2">English Language</td>
+                <td colspan="2">Science</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
